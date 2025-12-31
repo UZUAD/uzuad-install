@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>UZUAD Install</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      const ua = navigator.userAgent.toLowerCase();
+
+      if (ua.includes("android")) {
+        location.replace("https://play.google.com/store/apps/details?id=com.uzuad.app");
+        return;
+      }
+
+      if (ua.includes("iphone") || ua.includes("ipad") || ua.includes("ipod")) {
+        location.replace("https://apps.apple.com/kr/app/우주애드/id6755998187");
+        return;
+      }
+
+      location.replace("https://uzuad.com");
+    })();
+  </script>
+</head>
+<body></body>
+</html>
